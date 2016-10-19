@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div data-github="Ceece/fmetadata-ms" data-width="400" data-height="150" data-theme="default" class="github-card"></div>
+    <h1><%= title %></h1>
+    <h2>User Story</h2>
+    <ol>
+      <li><strong>User Story:</strong> I can submit a FormData object that includes a file upload.</li>
+      <li><strong>User Story:</strong> When I submit something, I will receive the file size in bytes within the JSON response.</li>
+    </ol>
+    <hr>
+    <form action="/get-file-size" method="post" enctype="multipart/form-data">
+      <input type="file" name="file">
+      <input type="submit">
+    </form>
+    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+  </body>
+</html>
